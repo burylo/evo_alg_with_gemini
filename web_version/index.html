@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Еволюційна Симуляція (Веб)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Еволюційна Симуляція</h1>
+
+    <div class="simulation-container">
+        <canvas id="simulationCanvas"></canvas>
+
+        <div class="controls">
+            <h2>Керування</h2>
+            <button id="pauseBtn">Пауза / Продовжити</button>
+            <button id="addFoodBtn">+ Їжа</button>
+            <button id="addCreatureBtn">+ Істота</button>
+            <button id="addPredatorBtn">+ Хижак</button>
+            <button id="saveStateBtn">Зберегти Стан</button>
+            <button id="loadStateBtn">Завантажити Стан</button>
+            <button id="resetStateBtn">Скинути</button>
+        </div>
+
+        <div class="info-panels">
+            <div class="panel statistics">
+                <h2>Статистика</h2>
+                <p>Час: <span id="simTime">0.0</span>с</p>
+                <p>Істоти: <span id="creatureCount">0</span>/<span id="maxCreatureCount">0</span> (Пок: <span id="maxCreatureGen">0</span>)</p>
+                <p>Хижаки: <span id="predatorCount">0</span>/<span id="maxPredatorCount">0</span> (Пок: <span id="maxPredatorGen">0</span>)</p>
+                <p>Їжа: <span id="foodCount">0</span></p>
+                <hr>
+                <p>Ср. Шв. Іст: <span id="avgCreatureSpeed">0.00</span></p>
+                <p>Ср. Чут. Іст: <span id="avgCreatureSense">0.0</span></p>
+                <p>Ср. Шв. Хиж: <span id="avgPredatorSpeed">0.00</span></p>
+                <p>Ср. Чут. Хиж: <span id="avgPredatorSense">0.0</span></p>
+            </div>
+
+            <div class="panel selected-agent-info">
+                <h2>Обраний Агент</h2>
+                <div id="selectedAgentDetails">
+                    <p>Клікніть на агента...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Область для графіків (можна додати пізніше) -->
+    <!-- <div class="charts-container">
+        <h2>Динаміка</h2>
+        <canvas id="populationChart"></canvas>
+        <canvas id="genesChart"></canvas>
+    </div> -->
+
+    <!-- Підключення JavaScript файлу -->
+    <script src="script.js"></script>
+</body>
+</html>
