@@ -171,4 +171,12 @@ cython_debug/
 .ruff_cache/
 
 # PyPI configuration file
+<<<<<<< HEAD
 .pypirc
+=======
+<<<<<<< HEAD
+.pypirc
+=======
+.pypirc
+>>>>>>> e414b77 (Gen alg with Gemini)
+>>>>>>> 694c85d (Gen alg with Gemini)
